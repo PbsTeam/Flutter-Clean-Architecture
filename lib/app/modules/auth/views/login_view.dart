@@ -1,6 +1,7 @@
 import 'package:artools/artools.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_clean_architecture/common/app_fonts.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
 import 'package:getx_clean_architecture/common/translations/AppLanguageUpdate.dart';
 
@@ -11,12 +12,11 @@ import '../../../routes/app_routes.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
-  // const LoginView({super.key});
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Obx(
         () => Stack(
           children: [
@@ -39,10 +39,13 @@ class LoginView extends GetView<LoginController> {
                             Text(
                               AppLanguageUpdate.welcome.tr,
                               style: Get.textTheme.headlineMedium!.copyWith(
-                                  letterSpacing: 1.5, color: Colors.black),
+                                  letterSpacing: 1.5,
+                                  fontFamily: FontFamily.poppinsSemiBold,
+                                  color: Colors.black),
                             ).marginOnly(bottom: 8),
                             Text(AppLanguageUpdate.login_to_your_account.tr,
-                                    style: Get.textTheme.bodyMedium)
+                                    style: Get.textTheme.bodyMedium!.copyWith(
+                                        fontFamily: FontFamily.poppinsMedium))
                                 .marginOnly(
                               bottom: 40,
                             ),
@@ -111,7 +114,11 @@ class LoginView extends GetView<LoginController> {
                                     },
                                     child: Text(
                                         AppLanguageUpdate.forgot_password.tr,
-                                        style: Get.textTheme.bodyMedium),
+                                        style:
+                                            Get.textTheme.bodyMedium!.copyWith(
+                                          fontFamily:
+                                              FontFamily.poppinsSemiBold,
+                                        )),
                                   ),
                                 ],
                               ).paddingSymmetric(horizontal: 24),
@@ -271,6 +278,30 @@ class LoginView extends GetView<LoginController> {
                                   ],
                                 ),
                               ),
+                              // SizedBox(height: 20),
+                              // Padding(
+                              //   padding: const EdgeInsets.symmetric(
+                              //       horizontal: 16, vertical: 10),
+                              //   child: Row(
+                              //     mainAxisAlignment:
+                              //         MainAxisAlignment.spaceBetween,
+                              //     children: [
+                              //       Text(
+                              //         AppLanguageUpdate.theme.tr,
+                              //         style: TextStyle(
+                              //             color: AppColors.darkText.color,
+                              //             fontSize: 16),
+                              //       ),
+                              //       Spacer(),
+                              //       Switch(
+                              //         value: controller.isSwitched.value,
+                              //         onChanged: (value) {
+                              //           controller.toggleSwitch(value);
+                              //         },
+                              //       ),
+                              //     ],
+                              //   ),
+                              // )
                             ],
                           ),
                         )
@@ -295,7 +326,8 @@ class LoginView extends GetView<LoginController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(AppLanguageUpdate.don_not_have_account.tr,
-                  style: Get.textTheme.bodyMedium),
+                  style: Get.textTheme.bodyMedium!
+                      .copyWith(fontFamily: FontFamily.poppinsMedium)),
               TextButton(
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
@@ -304,8 +336,7 @@ class LoginView extends GetView<LoginController> {
                 child: Text(
                   AppLanguageUpdate.sign_up.tr,
                   style: Get.textTheme.headlineMedium!.copyWith(
-                    fontSize: 16,
-                  ),
+                      fontSize: 16, fontFamily: FontFamily.poppinsSemiBold),
                 ),
               )
             ],

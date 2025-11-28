@@ -38,7 +38,16 @@ final Map<String, String> esSP = <String, String>{
       'Por favor, acepta los términos y condiciones.',
   AppLanguageUpdate.dashboard: 'Tablero',
   AppLanguageUpdate.reservations: 'Reservas',
-  AppLanguageUpdate.favourite: 'Favorito',
+  AppLanguageUpdate.favourite: 'Favoritos',
   AppLanguageUpdate.profile: 'Perfil',
-  AppLanguageUpdate.theme: 'Tema',
+  AppLanguageUpdate.typeOfWorkSpace: 'Tipos de espacios de trabajo',
+  AppLanguageUpdate.seeAll: 'Ver todo',
+  AppLanguageUpdate.featuredWorkSpace: 'Espacios de trabajo destacados',
+  AppLanguageUpdate.myReservations: 'Mis reservas',
+  AppLanguageUpdate.availableWithinHour: 'Disponible dentro de 24 horas',
+  AppLanguageUpdate.recommendedWorkSpaces:
+      'Espacios de trabajo recomendados cercanos',
+  AppLanguageUpdate.reservationsComingSoon: 'Reservas \n próximamente',
+  AppLanguageUpdate.favouriteComingSoon: 'Favoritos \n próximamente',
+  AppLanguageUpdate.profileComingSoon: 'Perfil \n próximamente',
 };

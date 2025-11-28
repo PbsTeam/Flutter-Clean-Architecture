@@ -65,7 +65,29 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assest/images/
+    - assest/fonts/
 
+
+
+fonts:
+   - family: Poppins_Regular
+     fonts:
+       - asset: assest/fonts/Poppins_Regular.ttf
+
+   - family: Poppins_SemiBold
+     fonts:
+       - asset: assest/fonts/Poppins_SemiBold.ttf
+
+   - family: Poppins_Light
+     fonts:
+       - asset: assest/fonts/Poppins_Light.ttf
+
+   - family: Poppins_Medium
+     fonts:
+       - asset: assest/fonts/Poppins_Medium.ttf
+         weight: 700
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

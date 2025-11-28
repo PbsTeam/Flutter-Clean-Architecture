@@ -40,4 +40,13 @@ class AppLanguageUpdate {
   static String favourite = 'favourite';
   static String profile = 'profile';
   static String theme = 'theme';
+  static String typeOfWorkSpace = 'typeOfWorkSpace';
+  static String seeAll = 'seeAll';
+  static String featuredWorkSpace = 'featuredWorkSpace';
+  static String myReservations = 'myReservations';
+  static String availableWithinHour = 'availableWithinHour';
+  static String recommendedWorkSpaces = 'recommendedWorkSpaces';
+  static String reservationsComingSoon = 'reservationComingSoon';
+  static String favouriteComingSoon = 'favouriteComingSoon';
+  static String profileComingSoon = 'profileComingSoon';
 }

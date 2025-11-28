@@ -15,7 +15,14 @@ enum AppColors with ColorValues {
   bgColor(Color(0xFFF2F2F4), "bgColor"),
   fieldTextColor(Color(0xFF565656), "fieldTextColor"),
   buttonColor(Color(0xFFF5C27D), "buttonColor"),
-  primaryColor(Color(0XFFF5C27D), "primaryColor");
+  buttonColorlight(Color(0x69F5C27D), "buttonColorlight"),
+  blueColor(Color(0xFF1DCDFE), "blueColor"),
+  medicalSpaBg(Color(0xFFD57DF6), "medicalSpaBg"),
+  beautySaloonBg(Color(0xFFFF7330), "beautySaloonBg"),
+  primaryColor(Color(0XFFF5C27D), "primaryColor"),
+  blackColor(Color(0XFF000000), "blackColor"),
+  lightGreyColor(Color(0XFF6C6B6A), "lightGreyColor"),
+  containerBgColor(Color(0XFFF5F5F5), "containerBgColor");
 
   final Color color;
   final String name;

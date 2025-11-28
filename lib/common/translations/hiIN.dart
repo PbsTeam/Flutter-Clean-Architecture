@@ -41,4 +41,13 @@ final Map<String, String> hiIN = {
   AppLanguageUpdate.reservations: 'आरक्षण',
   AppLanguageUpdate.favourite: 'पसंदीदा',
   AppLanguageUpdate.profile: 'प्रोफ़ाइल',
+  AppLanguageUpdate.typeOfWorkSpace: 'कार्यक्षेत्रों के प्रकार',
+  AppLanguageUpdate.seeAll: 'सभी देखें',
+  AppLanguageUpdate.featuredWorkSpace: 'विशेष रुप से प्रदर्शित कार्यस्थान',
+  AppLanguageUpdate.myReservations: 'मेरा आरक्षण',
+  AppLanguageUpdate.availableWithinHour: '24 घंटे के भीतर उपलब्ध',
+  AppLanguageUpdate.recommendedWorkSpaces: 'आस-पास के अनुशंसित कार्यस्थान',
+  AppLanguageUpdate.reservationsComingSoon: 'आरक्षण \n जल्द ही आ रहा है',
+  AppLanguageUpdate.favouriteComingSoon: 'पसंदीदा \n जल्द आ रहा है',
+  AppLanguageUpdate.profileComingSoon: 'प्रोफ़ाइल \n जल्द आ रहा है',
 };

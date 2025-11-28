@@ -5,15 +5,15 @@ import 'package:getx_clean_architecture/app/modules/dashboard/controllers/dashbo
 import 'package:getx_clean_architecture/common/colors.dart';
 import 'package:getx_clean_architecture/common/translations/AppLanguageUpdate.dart';
 
-class ProfileView extends GetView<DashboardController> {
-  const ProfileView({super.key});
+class ReservationsView extends GetView<DashboardController> {
+  const ReservationsView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Text(
       textAlign: TextAlign.center,
-      AppLanguageUpdate.profileComingSoon.tr,
+      AppLanguageUpdate.reservationsComingSoon.tr,
       style: Get.textTheme.headlineLarge!,
     ));
   }

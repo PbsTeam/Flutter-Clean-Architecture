@@ -39,4 +39,13 @@ final Map<String, String> enUS = {
   AppLanguageUpdate.favourite: 'Favourite',
   AppLanguageUpdate.profile: 'Profile',
   AppLanguageUpdate.theme: 'Theme',
+  AppLanguageUpdate.typeOfWorkSpace: 'Type Of Workspaces',
+  AppLanguageUpdate.seeAll: 'See All',
+  AppLanguageUpdate.featuredWorkSpace: 'Featured Workspaces',
+  AppLanguageUpdate.myReservations: 'My Reservations',
+  AppLanguageUpdate.availableWithinHour: 'Available Within 24-hours',
+  AppLanguageUpdate.recommendedWorkSpaces: 'Recommended Workspaces Nearby',
+  AppLanguageUpdate.reservationsComingSoon: 'Reservations \n Coming Soon',
+  AppLanguageUpdate.favouriteComingSoon: 'Favourite \n  Coming Soon',
+  AppLanguageUpdate.profileComingSoon: 'Profile \n  Coming Soon',
 };

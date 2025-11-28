@@ -62,8 +62,8 @@ class CustomBottomNavigationBar extends GetView<RootController> {
           AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             height: isSelected ? 2 : 0,
-            margin: const EdgeInsets.only(bottom: 13.5),
-            width: 73,
+            margin: const EdgeInsets.only(bottom: 12),
+            width: 80,
             color:
                 isSelected ? AppColors.buttonColor.color : Colors.transparent,
           ),
@@ -83,14 +83,16 @@ class CustomBottomNavigationBar extends GetView<RootController> {
                 ),
               ).paddingOnly(top: isSelected ? 0 : 10),
               const SizedBox(height: 6),
-              if (isSelected)
-                AnimatedTextLabel(
-                  item.label,
-                  textStyle: Get.textTheme.bodyMedium!.copyWith(
-                    color: AppColors.buttonColor.color,
-                    fontFamily: 'SF-Pro-Text',
-                  ),
+              // if (isSelected)
+              AnimatedTextLabel(
+                item.label,
+                textStyle: Get.textTheme.bodyMedium!.copyWith(
+                  color: isSelected
+                      ? AppColors.buttonColor.color
+                      : AppColors.fieldTextColor.color,
+                  fontFamily: 'SF-Pro-Text',
                 ),
+              ),
             ],
           ),
         ],

@@ -10,6 +10,7 @@ class AuthBinding extends Bindings {
   void dependencies() {
     // Get.put(AuthController(), permanent: true);
     Get.lazyPut(() => LoginService());
+    Get.lazyPut(() => LoginController());
     Get.lazyPut(() => RegisterService());
 
     // Get.lazyPut(() => LoginController(authService: Get.find<LoginService>()));

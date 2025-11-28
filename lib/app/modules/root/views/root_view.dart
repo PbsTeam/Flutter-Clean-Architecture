@@ -32,7 +32,7 @@ class RootView extends GetView<RootController> {
           children: [
             CustomBottomNavigationItem(
               iconUrl: Icons.dashboard,
-              selectedIconUrl: Icons.home,
+              selectedIconUrl: Icons.dashboard,
               label: AppLanguageUpdate.dashboard.tr,
               color: Get.theme.primaryColor,
             ),
@@ -43,8 +43,8 @@ class RootView extends GetView<RootController> {
               color: Get.theme.primaryColor,
             ),
             CustomBottomNavigationItem(
-              iconUrl: Icons.message_outlined,
-              selectedIconUrl: Icons.message,
+              iconUrl: Icons.favorite,
+              selectedIconUrl: Icons.favorite,
               label: AppLanguageUpdate.favourite.tr,
               color: Get.theme.primaryColor,
             ),

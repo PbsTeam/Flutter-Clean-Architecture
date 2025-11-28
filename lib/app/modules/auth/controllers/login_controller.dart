@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/app/local_storage/GetXLoaclStorage.dart';
-import 'package:getx_clean_architecture/common/LightAndDarkTheme.dart';
+import 'package:getx_clean_architecture/common/theme/LightAndDarkTheme.dart';
 
 import '../../../../common/ui.dart';
 import '../../../models/user_model.dart';
@@ -50,7 +50,7 @@ class LoginController extends GetxController {
 
   void toggleSwitch(bool value) {
     isSwitched.value = !isSwitched.value;
-    print(" === " + isSwitched.value.toString());
+    print(" toggle value === " + isSwitched.value.toString());
     update();
   }
 

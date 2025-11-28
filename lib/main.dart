@@ -5,11 +5,12 @@ import 'package:getx_clean_architecture/app/local_storage/GetXLoaclStorage.dart'
 import 'package:getx_clean_architecture/app/modules/auth/controllers/login_controller.dart';
 import 'package:getx_clean_architecture/app/routes/app_pages.dart';
 import 'package:getx_clean_architecture/app/services/background/user_service.dart';
-import 'package:getx_clean_architecture/common/LightAndDarkTheme.dart';
+import 'package:getx_clean_architecture/common/theme/LightAndDarkTheme.dart';
+import 'package:getx_clean_architecture/common/theme/controller/ThemeController.dart';
 import 'package:getx_clean_architecture/common/translations/AppLanguageUpdate.dart';
 import 'package:getx_clean_architecture/common/translations/app_translation.dart';
 import 'app/services/background/local_storage_service.dart';
-import 'common/theme.dart';
+import 'common/theme/theme.dart';
 
 void main() async {
   await GetStorage.init();
@@ -21,8 +22,7 @@ void main() async {
   await Get.putAsync(() => LocalStorageService().init());
   await Get.putAsync(() => UserService().init());
 
-  LoginController loginController = Get.put(LoginController());
-
+  // final ThemeController themeController = Get.find();
   runApp(
     GetMaterialApp(
       title: 'CleanArchitectureGetX',
@@ -32,9 +32,9 @@ void main() async {
       defaultTransition: Transition.cupertino,
       translations: AppTranslation(),
       theme: getAppTheme(),
-      // theme: LightAndDarkTheme.themeDatalight,
-      // darkTheme: LightAndDarkTheme.themeDataDark,
-      // themeMode: loginController.themeMode,
+      // theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      // themeMode: themeController.themeMode,
       locale: localStorage.userLanguage.isNotEmpty
           ? supportedLocales[localStorage.userLanguage] ??
               const Locale('en', 'US')

@@ -15,6 +15,8 @@ class Routes {
 
   static const ROOT = '/root';
   static const DASHBOARD = '/dashboard';
+  static const ALLLISTING = '/all_listing';
+  static const ALLPHOTOS = '/all_photos';
 
   static const PROFILE = '/profile';
   static const SETTINGS = '/settings';

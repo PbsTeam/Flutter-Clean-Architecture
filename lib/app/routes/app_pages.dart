@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/app/modules/dashboard/views/SettingsView/SeetingsView.dart';
+import 'package:getx_clean_architecture/app/modules/dashboard/views/all_listing/AllListingScreen.dart';
+import 'package:getx_clean_architecture/app/modules/dashboard/views/all_photos_screen/AllPhotosScreen.dart';
 import 'package:getx_clean_architecture/app/modules/root/views/root_view.dart';
 
 import '../modules/auth/bindings/auth_binding.dart';
@@ -17,7 +19,6 @@ class AppPages {
       page: () => const RootView(),
       binding: RootBinding(),
     ),
-    GetPage(name: Routes.SETTINGS, page: () => SettingsScreen()),
     GetPage(
         name: Routes.LOGIN, page: () => LoginView(), binding: AuthBinding()),
     GetPage(
@@ -25,5 +26,8 @@ class AppPages {
       page: () => RegisterView(),
       binding: AuthBinding(),
     ),
+    GetPage(name: Routes.SETTINGS, page: () => SettingsScreen()),
+    GetPage(name: Routes.ALLLISTING, page: () => AllListingScreen()),
+    GetPage(name: Routes.ALLPHOTOS, page: () => AllPhotosScreen()),
   ];
 }

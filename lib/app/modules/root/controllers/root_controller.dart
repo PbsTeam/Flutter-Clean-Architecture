@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard_view.dart';
-import 'package:getx_clean_architecture/app/modules/dummy_views_that_should_follow_dashboard/market_view.dart';
-import 'package:getx_clean_architecture/app/modules/dummy_views_that_should_follow_dashboard/messages_view.dart';
+import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/dashboard_view.dart';
+import 'package:getx_clean_architecture/app/modules/dummy_views_that_should_follow_dashboard/favourite_view.dart';
+import 'package:getx_clean_architecture/app/modules/dummy_views_that_should_follow_dashboard/reservations_view.dart';
 import 'package:getx_clean_architecture/app/modules/dummy_views_that_should_follow_dashboard/profile_view.dart';
 import '../../../routes/app_routes.dart';
 
@@ -11,8 +11,8 @@ class RootController extends GetxController {
 
   List<Widget> pages = [
     const DashboardView(),
-    const MarketView(),
-    const MessagesView(),
+    const ReservationsView(),
+    const FavouriteView(),
     const ProfileView(),
   ];
 
