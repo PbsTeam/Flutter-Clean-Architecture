@@ -38,11 +38,11 @@ class ReservationsView extends GetView<DashboardController> {
                           unselectedLabelColor: AppColors.blackColor.color,
                           indicatorColor: AppColors.buttonColor.color,
                           indicatorSize: TabBarIndicatorSize.tab,
-                          labelStyle: TextStyle(
+                          labelStyle: const TextStyle(
                               fontFamily: FontFamily.poppinsMedium,
                               fontWeight: FontWeight.w500,
                               fontSize: 14),
-                          tabs: [
+                          tabs: const [
                             Tab(text: 'Pending'),
                             Tab(text: 'Confirmed'),
                             Tab(text: 'Completed')
@@ -52,22 +52,25 @@ class ReservationsView extends GetView<DashboardController> {
                           ListView.separated(
                               itemBuilder: (context, index) =>
                                   PendingReservationView("Pending"),
-                              separatorBuilder: (context, index) => SizedBox(
+                              separatorBuilder: (context, index) =>
+                                  const SizedBox(
                                     height: 4,
                                   ),
                               itemCount: 10),
                           ListView.separated(
                               itemBuilder: (context, index) =>
-                                  PendingReservationView("Confirmed"),
-                              separatorBuilder: (context, index) => SizedBox(
+                                  const PendingReservationView("Confirmed"),
+                              separatorBuilder: (context, index) =>
+                                  const SizedBox(
                                     height: 4,
                                   ),
                               itemCount: 6),
 
                           ListView.separated(
                               itemBuilder: (context, index) =>
-                                  PendingReservationView("Complete"),
-                              separatorBuilder: (context, index) => SizedBox(
+                                  const PendingReservationView("Complete"),
+                              separatorBuilder: (context, index) =>
+                                  const SizedBox(
                                     height: 4,
                                   ),
                               itemCount: 3),

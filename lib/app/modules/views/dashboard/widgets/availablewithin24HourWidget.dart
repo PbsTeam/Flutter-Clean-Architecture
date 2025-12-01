@@ -5,18 +5,21 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
 
 import '../../../../../../common/app_fonts.dart';
-import '../../models/available_within_hours_model.dart';
+import '../../../../models/available_within_hours_model.dart';
 
 Widget AvailableWithin24hour(
-    BuildContext context, AvailableWithINHoursModelClass dataModel) {
+  BuildContext context,
+  AvailableWithINHoursModelClass dataModel,
+) {
   return Padding(
     padding: const EdgeInsets.all(16.0),
     child: Container(
       width: MediaQuery.sizeOf(context).width / 1.2,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: AppColors.white.color,
-          border: Border.all(color: AppColors.lightGreyColor.color, width: 1)),
+        borderRadius: BorderRadius.circular(10),
+        color: AppColors.white.color,
+        border: Border.all(color: AppColors.lightGreyColor.color, width: 1),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Row(
@@ -25,9 +28,12 @@ Widget AvailableWithin24hour(
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                      image: AssetImage(dataModel.image), fit: BoxFit.cover)),
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                  image: AssetImage(dataModel.image),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
             SizedBox(width: 10),
             Flexible(
@@ -43,10 +49,11 @@ Widget AvailableWithin24hour(
                           maxLines: 1,
                           'Entire beauty',
                           style: Get.textTheme.titleMedium!.copyWith(
-                              color: AppColors.blackColor.color,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                              fontFamily: FontFamily.poppinsMedium),
+                            color: AppColors.blackColor.color,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            fontFamily: FontFamily.poppinsMedium,
+                          ),
                         ),
                       ),
                       Row(
@@ -61,13 +68,14 @@ Widget AvailableWithin24hour(
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: Get.textTheme.titleMedium!.copyWith(
-                                color: AppColors.blackColor.color,
-                                fontFamily: FontFamily.poppinsSemiBold,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600),
+                              color: AppColors.blackColor.color,
+                              fontFamily: FontFamily.poppinsSemiBold,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                   Row(
@@ -83,33 +91,34 @@ Widget AvailableWithin24hour(
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: Get.textTheme.titleMedium!.copyWith(
-                            color: AppColors.lightGreyColor.color,
-                            fontWeight: FontWeight.w500,
-                            fontSize: 12,
-                            fontFamily: FontFamily.poppinsMedium),
+                          color: AppColors.lightGreyColor.color,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 12,
+                          fontFamily: FontFamily.poppinsMedium,
+                        ),
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 6,
-                  ),
+                  SizedBox(height: 6),
                   Container(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: AppColors.buttonColor.color),
-                      child: Text(
-                        'Book',
-                        style: Get.textTheme.headlineMedium!.copyWith(
-                            color: AppColors.white.color,
-                            fontSize: 14,
-                            fontFamily: FontFamily.poppinsSemiBold,
-                            fontWeight: FontWeight.w600),
-                      )),
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: AppColors.buttonColor.color,
+                    ),
+                    child: Text(
+                      'Book',
+                      style: Get.textTheme.headlineMedium!.copyWith(
+                        color: AppColors.white.color,
+                        fontSize: 14,
+                        fontFamily: FontFamily.poppinsSemiBold,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -5,10 +5,12 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:getx_clean_architecture/common/app_fonts.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
 
-import '../../models/featured_workspace_model.dart';
+import '../../../../models/featured_workspace_model.dart';
 
 Widget FeatureWorkspaceWidget(
-    BuildContext context, FeaturedWorkSpaceModelClass dataModel) {
+  BuildContext context,
+  FeaturedWorkSpaceModelClass dataModel,
+) {
   return Container(
     width: MediaQuery.sizeOf(context).width / 1.1,
     child: Column(
@@ -33,8 +35,9 @@ Widget FeatureWorkspaceWidget(
               right: 20,
               child: Container(
                 decoration: BoxDecoration(
-                    color: AppColors.secondaryTextColor.color,
-                    borderRadius: BorderRadius.circular(10)),
+                  color: AppColors.secondaryTextColor.color,
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
@@ -42,25 +45,25 @@ Widget FeatureWorkspaceWidget(
                       Text(
                         'Form',
                         style: Get.textTheme.titleSmall!.copyWith(
-                            color: AppColors.white.color,
-                            fontFamily: FontFamily.poppinsMedium),
+                          color: AppColors.white.color,
+                          fontFamily: FontFamily.poppinsMedium,
+                        ),
                       ),
                       Text(
                         '75\$/day',
                         style: Get.textTheme.bodyLarge!.copyWith(
-                            color: AppColors.buttonColor.color,
-                            fontFamily: FontFamily.poppinsMedium),
-                      )
+                          color: AppColors.buttonColor.color,
+                          fontFamily: FontFamily.poppinsMedium,
+                        ),
+                      ),
                     ],
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
-        SizedBox(
-          height: 10,
-        ),
+        SizedBox(height: 10),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           child: Row(
@@ -72,9 +75,10 @@ Widget FeatureWorkspaceWidget(
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: Get.textTheme.titleMedium!.copyWith(
-                      color: AppColors.blackColor.color,
-                      fontFamily: FontFamily.poppinsMedium,
-                      fontWeight: FontWeight.w500),
+                    color: AppColors.blackColor.color,
+                    fontFamily: FontFamily.poppinsMedium,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
               Row(
@@ -89,13 +93,14 @@ Widget FeatureWorkspaceWidget(
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: Get.textTheme.titleMedium!.copyWith(
-                        color: AppColors.blackColor.color,
-                        fontFamily: FontFamily.poppinsMedium,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500),
+                      color: AppColors.blackColor.color,
+                      fontFamily: FontFamily.poppinsMedium,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),
@@ -114,10 +119,11 @@ Widget FeatureWorkspaceWidget(
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: Get.textTheme.titleMedium!.copyWith(
-                    color: AppColors.lightGreyColor.color,
-                    fontFamily: FontFamily.poppinsMedium,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 12),
+                  color: AppColors.lightGreyColor.color,
+                  fontFamily: FontFamily.poppinsMedium,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 12,
+                ),
               ),
             ],
           ),

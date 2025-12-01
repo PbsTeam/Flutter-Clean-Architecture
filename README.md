@@ -115,8 +115,9 @@ MVVM helps keep your code modular, testable, and easy to scale
 └──────────────────────────────────────────────────────────┘
 ```
 
-**📌 How Each Layer Works in Your Project**
-**1. View (UI Layer)**
+### **📌 How Each Layer Works in Your Project**
+
+#### **1. View (UI Layer)**
 
 📁 app/modules/**/views/
 
@@ -128,7 +129,7 @@ No business logic
 
 Example: Login screen, Dashboard screen.
 
-**2. ViewModel (Controller Layer)**
+#### **2. ViewModel (Controller Layer)**
 
 📁 app/modules/**/controllers/
 
@@ -142,7 +143,7 @@ Updates View
 
 In GetX, Controller = ViewModel.
 
-**3. Service (Use Case Layer)**
+#### **3. Service (Use Case Layer)**
 
 📁 app/modules/**/services/
 
@@ -160,7 +161,7 @@ Transform API response into a model
 
 Save token using Shared Preferences
 
-**4. Provider (Data Source Layer)**
+#### **4. Provider (Data Source Layer)**
 
 📁 app/providers/
 
@@ -176,7 +177,7 @@ Example:
 
 `dio.post("/login", data);`
 
-**5. Models (Entity Layer)**
+#### **5. Models (Entity Layer)**
 
 📁 app/models/
 
@@ -192,7 +193,8 @@ UserModel
 
 LoginResponseModel
 
-**🌐 Complete Flow Example (MVVM in Action)**
+### **🌐 Complete Flow Example (MVVM in Action)**
+
 User taps “Login”
 
 View → calls → ViewModel’s login()
@@ -204,7 +206,8 @@ Service → returns processed Model
 ViewModel → updates reactive variables
 UI (View) updates automatically (Obx)
 
-**📦 Folder Mapping With MVVM**
+### **📦 Folder Mapping With MVVM**
+
 `` app/
      modules/
        login/
