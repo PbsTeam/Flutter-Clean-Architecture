@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/available_within_hours_model.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
 
 import '../../../../../../common/app_fonts.dart';
+import '../../models/available_within_hours_model.dart';
 
 Widget AvailableWithin24hour(
     BuildContext context, AvailableWithINHoursModelClass dataModel) {

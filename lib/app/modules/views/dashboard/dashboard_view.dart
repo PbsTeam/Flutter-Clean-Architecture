@@ -3,11 +3,12 @@ import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/app/modules/dashboard/controllers/dashboard_controller.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/widgets/FeaturedWorkspaceWidget.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/widgets/MyReservationsWidget.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/widgets/RecommendedWorkspaceWidget.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/widgets/TypeOfWidget.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/widgets/availablewithin24HourWidget.dart';
+import 'package:getx_clean_architecture/app/modules/views/dashboard/widgets/FeaturedWorkspaceWidget.dart';
+import 'package:getx_clean_architecture/app/modules/views/dashboard/widgets/MyReservationsWidget.dart';
+import 'package:getx_clean_architecture/app/modules/views/dashboard/widgets/RecommendedWorkspaceWidget.dart';
+import 'package:getx_clean_architecture/app/modules/views/dashboard/widgets/TypeOfWidget.dart';
+import 'package:getx_clean_architecture/app/modules/views/dashboard/widgets/availablewithin24HourWidget.dart';
+
 import 'package:getx_clean_architecture/common/app_fonts.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
 import 'package:getx_clean_architecture/common/translations/AppLanguageUpdate.dart';
@@ -27,7 +28,8 @@ class DashboardView extends GetView<DashboardController> {
               children: [
                 Container(
                   padding: EdgeInsets.only(bottom: 10.0),
-                  decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                  decoration:
+                      BoxDecoration(color: AppColors.white.color, boxShadow: [
                     BoxShadow(
                       color: AppColors.lightGreyColor.color
                           .withValues(alpha: 0.15),

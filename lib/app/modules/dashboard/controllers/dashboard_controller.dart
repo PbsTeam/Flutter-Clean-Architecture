@@ -1,16 +1,17 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/app/modules/dashboard/services/dashboard_service.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/available_within_hours_model.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/featured_workspace_model.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/my_reservation_model.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/recommended_workSpaces.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/type_of_work_space_model.dart';
+
 import 'package:getx_clean_architecture/common/colors.dart';
 
 import '../../../../common/ui.dart';
 import '../../../models/user_model.dart';
 import '../../../services/background/user_service.dart';
+import '../../views/models/available_within_hours_model.dart';
+import '../../views/models/featured_workspace_model.dart';
+import '../../views/models/my_reservation_model.dart';
+import '../../views/models/recommended_workSpaces.dart';
+import '../../views/models/type_of_work_space_model.dart';
 
 class DashboardController extends GetxController {
   AnyDashboardService dashboardService;

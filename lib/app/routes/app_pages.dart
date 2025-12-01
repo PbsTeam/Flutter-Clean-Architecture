@@ -1,13 +1,13 @@
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/SettingsView/SeetingsView.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/all_listing/AllListingScreen.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/all_photos_screen/AllPhotosScreen.dart';
 import 'package:getx_clean_architecture/app/modules/root/views/root_view.dart';
 
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/login_view.dart';
 import '../modules/auth/views/register_view.dart';
 import '../modules/root/bindings/root_binding.dart';
+import '../modules/views/SettingsView/SeetingsView.dart';
+import '../modules/views/all_listing/AllListingScreen.dart';
+import '../modules/views/all_photos_screen/AllPhotosScreen.dart';
 import 'app_routes.dart';
 
 class AppPages {

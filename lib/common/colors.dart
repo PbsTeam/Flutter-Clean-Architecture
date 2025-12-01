@@ -22,6 +22,7 @@ enum AppColors with ColorValues {
   primaryColor(Color(0XFFF5C27D), "primaryColor"),
   blackColor(Color(0XFF000000), "blackColor"),
   lightGreyColor(Color(0XFF6C6B6A), "lightGreyColor"),
+  borderColor(Color(0XFFD2D2D2), "borderColor"),
   containerBgColor(Color(0XFFF5F5F5), "containerBgColor");
 
   final Color color;

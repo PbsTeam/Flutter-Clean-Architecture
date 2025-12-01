@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/dashboard/widgets/RecommendedWorkspaceWidget.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
 import 'package:getx_clean_architecture/common/commonAppBar/commonAppBar.dart';
 

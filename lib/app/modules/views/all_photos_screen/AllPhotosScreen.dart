@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/all_photos_screen/widgets/AllPhotosWidget.dart';
+import 'package:getx_clean_architecture/app/modules/views/all_photos_screen/widgets/AllPhotosWidget.dart';
 
 import '../../../../../common/colors.dart';
 import '../../../../../common/commonAppBar/commonAppBar.dart';

@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:getx_clean_architecture/app/modules/dashboard/views/models/type_of_work_space_model.dart';
 import 'package:getx_clean_architecture/common/app_fonts.dart';
 import 'package:getx_clean_architecture/common/colors.dart';
+
+import '../../models/type_of_work_space_model.dart';
 
 Widget TypeOfWorkspaceWidget(
     BuildContext context, TypeOfWorkSpaceModelClass typeOfWorkSpaceModelClass) {
